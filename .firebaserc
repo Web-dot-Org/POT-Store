@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "sbt-solutions-ac3e8",
+    "Pot Store": "pot-store-g59",
+    "store": "pot-store-59"
+  }
+}
