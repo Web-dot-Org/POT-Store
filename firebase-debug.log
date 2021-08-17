@@ -1,0 +1,52 @@
+[debug] [2021-08-17T15:33:55.553Z] ----------------------------------------------------------------------
+[debug] [2021-08-17T15:33:55.558Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-08-17T15:33:55.559Z] CLI Version:   9.16.5
+[debug] [2021-08-17T15:33:55.560Z] Platform:      win32
+[debug] [2021-08-17T15:33:55.560Z] Node Version:  v16.3.0
+[debug] [2021-08-17T15:33:55.737Z] Time:          Tue Aug 17 2021 10:33:55 GMT-0500 (hora estándar de Colombia)
+[debug] [2021-08-17T15:33:55.738Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-17T15:33:56.002Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-17T15:33:56.003Z] > authorizing via signed-in user (bartzavaal@gmail.com)
+[debug] [2021-08-17T15:33:56.004Z] [iam] checking project sandicas-burguer-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-17T15:33:56.044Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sandicas-burguer-house:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-17T15:33:56.855Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Aug 2021 15:33:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=347","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T15:33:56.862Z] > refreshing access token with scopes: []
+[debug] [2021-08-17T15:33:56.863Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-17T15:33:57.056Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 17 Aug 2021 15:33:56 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T15:33:57.252Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sandicas-burguer-house [none]
+[debug] [2021-08-17T15:33:57.557Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sandicas-burguer-house 200
+[debug] [2021-08-17T15:33:57.558Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sandicas-burguer-house {"projectId":"sandicas-burguer-house","projectNumber":"76542798069","displayName":"Sandicas Burguer House","name":"projects/sandicas-burguer-house","resources":{"hostingSite":"sandicas-burguer-house"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'sandicas-burguer-house'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-17T15:33:57.569Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-17T15:33:57.570Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-17T15:33:57.736Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 17 Aug 2021 15:33:57 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T15:33:58.072Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/sandicas-burguer-house/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-17T15:33:59.396Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Aug 2021 15:33:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[sandicas-burguer-house]: beginning deploy... 
+[debug] [2021-08-17T15:34:02.200Z] Error: EPERM: operation not permitted, scandir 'C:/Users/pc/AppData/Local/Archivos temporales de Internet'
+    at Object.readdirSync (node:fs:1380:3)
+    at GlobSync._readdir (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at GlobSync._processGlobStar (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:381:10)
+    at GlobSync._process (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at GlobSync._processGlobStar (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:381:10)
+    at GlobSync._process (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at Function.globSync [as sync] (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at Object.listFiles (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at runDeploys (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:35)
+[error] 
+[error] Error: An unexpected error has occurred.

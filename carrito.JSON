@@ -1,37 +1,27 @@
-[{
-        "precio": 37.000,
-        "id": 1,
-        "title": "Philip plein gris",
-        "thumbnailUrl": "https://picsum.photos/id/0/600"
-    },
+[
     {
-        "precio": 37.000,
-        "id": 2,
-        "title": "Tesla amarilla",
-        "thumbnailUrl": "https://picsum.photos/id/10/600"
-    },
-    {
-        "precio": 37.000,
-        "id": 3,
-        "title": "Pharaon amarilla",
-        "thumbnailUrl": "https://picsum.photos/id/20/600"
-    },
-    {
-        "precio": 28.000,
-        "id": 4,
-        "title": "klonopin",
-        "thumbnailUrl": "https://picsum.photos/id/30/600"
-    },
-    {
-        "precio": 20.000,
-        "id": 5,
-        "title": "Adderall",
-        "thumbnailUrl": "https://picsum.photos/id/40/600"
-    },
-    {
-        "precio": 20.000,
-        "id": 6,
-        "title": "Xanax",
-        "thumbnailUrl": "https://picsum.photos/id/50/600"
-    }
+    id: 1,
+    nombre: 'Hamburguesa sencilla',
+    precio: 8.000,
+    imagen: 'assets/images/hamburguesa estandar.png'
+},
+{
+    id: 2,
+    nombre: 'Hamburguesa doble',
+    precio: 11.000,
+    imagen: 'assets/images/hamburguesa doble.png'
+},
+{
+    id: 3,
+    nombre: 'Hamburguesa de la casa',
+    precio: 10.000,
+    imagen: 'assets/images/hamburguesa especial.png'
+},
+{
+    id: 4,
+    nombre: 'Hot dog',
+    precio: 9.000,
+    imagen: 'assets/images/sandicas hot dog.png'
+}
+
 ]
